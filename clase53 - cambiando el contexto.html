@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase 53 - cambiando el contexto</title>
+  </head>
+  <body>
+    <script>
+      const belen = {
+        nombre: 'Belen',
+        apellido: 'Sosa'
+      }
+
+      const maria = {
+        nombre: 'Maria',
+        apellido: 'Rodriguez'
+      }
+
+      function saludar(saludo = 'Hola'){
+        console.log(`${saludo}, mi nombre es ${this.nombre}`)
+      }
+
+      //Bind devuelve una nueva funcion atando belen al this de la funcion
+      // bind no ejecuta , solo devuelve con el contexto cambiado
+      // const saludarABelen = saludar.bind(belen)
+      // const saludarAMaria = saludar.bind(maria)
+
+      // setTimeout(saludar.bind(belen,'Hola che'), 1000)
+
+      //Call a diferencia de bind si se ejecuta
+      // saludar.call(belen, 'Hola che')
+
+      //Parecido a call pero los parametros son un array
+      saludar.apply(belen, ['Hola che'])
+    </script>
+
+  </body>
+</html>

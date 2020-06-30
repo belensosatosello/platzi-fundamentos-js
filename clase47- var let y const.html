@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var belen = {
+      nombre: 'Belen',
+      apellido: 'Sosa',
+      edad: 30
+    }
+
+    function esMayorDeEdad(persona){
+      let mensaje
+      if(persona.edad > 18){
+        mensaje = 'Es mayor de edad'
+      } else {
+        mensaje = 'Es menor de edad'
+      }
+      console.log(mensaje)
+    }
+
+    //esMayorDeEdad(belen)
+    for(let i = 0; i< 10; i++ ){
+      console.log(i)
+    }
+    console.log(`Terminó el for, el valor de i es ${i}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase 48 - Manejo de Fechas</title>
+  </head>
+  <body>
+    <script>
+      function diasEntreFechas(fecha1,fecha2){
+        const unDia = 1000 * 60 * 60 * 24 //un día en milisegundos
+        const diferencia = Math.abs(fecha1 -fecha2) //diff en milisegundos
+
+        return Math.floor(diferencia / unDia)
+      }
+
+      const hoy = new Date()
+      const nacimiento = new Date(1989,8,21)
+      
+    </script>
+  </body>
+</html>

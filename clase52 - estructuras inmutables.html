@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase 52 - Estructuras inmutables</title>
+  </head>
+  <body>
+    <script>
+    const belen = {
+      nombre: 'Belen',
+      apellido: 'Sosa',
+      edad: 30
+    }
+
+    //const cumpleanos = persona => persona.edad++
+    const cumpleanosInmutable = persona => ({
+      ...persona,
+      edad: persona.edad + 1      
+    })
+    </script>
+  </body>
+</html>
